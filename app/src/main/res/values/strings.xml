@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ESalba</string>
+    <string name="app_name">E-Salba</string>
     <string name="e_salba_logo">E-Salba Logo</string>
     <string name="welcome">Welcome</string>
     <string name="tagline"><![CDATA[Sign up or login to view your household\'s electricity consumption.]]></string>
