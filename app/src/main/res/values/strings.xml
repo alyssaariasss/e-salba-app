@@ -16,4 +16,11 @@
     <string name="contact_num">Contact Number</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="device_text">Device</string>
+    <string name="electricity_text">Electricity</string>
+    <string name="appliances">Appliances</string>
+    <string name="enter">Enter</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="logout">Logout</string>
 </resources>

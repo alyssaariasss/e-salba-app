@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardElevation="5dp"
+    app:cardCornerRadius="20dp"
+    android:backgroundTint="@color/main_gray"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/applianceCardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Air Conditioner"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/applianceCardTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/applianceCardTitle"
+            android:minHeight="48dp"
+            app:thumbTint="@color/white"
+            app:trackTint="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/kwhCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/applianceCardTitle"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="15kWh"
+            android:textColor="@color/button_idle"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/setLimit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kwhCount"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sourcesanspro_regular"
+            android:text="Set limit"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/limitKwh"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/setLimit"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_btn3"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:gravity="center"
+            android:text="10:00 AM"
+            android:textColor="@color/black"
+            android:textColorHint="#546E7A"
+            android:textSize="15sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignTop="@+id/limitKwh"
+            android:layout_alignBottom="@+id/limitKwh"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="-3dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toEndOf="@+id/limitKwh"
+            android:background="@drawable/bg_spinner"
+            android:elevation="5dp"
+            android:fontFamily="@font/sourcesanspro_semibold"
+            android:popupBackground="#D3D3D3"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_alignTop="@+id/spinner"
+            android:layout_alignBottom="@+id/spinner"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toEndOf="@+id/spinner"
+            android:background="@drawable/round_btn3"
+            android:elevation="5dp"
+            android:fontFamily="@font/sourcesanspro_semibold"
+            android:paddingLeft="16dp"
+            android:paddingTop="0dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="0dp"
+            android:stateListAnimator="@null"
+            android:text="@string/enter"
+            android:textSize="16sp"
+            app:backgroundTint="@color/main_yellow"
+            tools:ignore="TextContrastCheck" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
